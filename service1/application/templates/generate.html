@@ -1,6 +1,45 @@
 <h1>{{ title }}</h1>
 
-<div>
-       <h3>{{ animal }}</h3>
-       <h3>{{ sound }}</h3>
-</div>                     
+<div class="animal">
+       <h2>{{ animal }}</h2>
+       <h2>{{ sound }}</h2>
+</div>  
+
+<form action="{{ url_for('generateanimal') }}">
+	    <button type="submit" class="again">Generate another animal</button>
+</form>
+
+<style>
+
+.again {
+
+left: 50%;
+border: 3px solid green;
+
+}
+
+
+.animal {
+
+height: 300px;
+width: 300px;
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+
+}
+
+h1 {
+text-align: center;
+background-color:#77D86B;
+}
+h2 {
+
+text-align: center;
+top: 50%;
+left: 50%;
+}
+</style>
