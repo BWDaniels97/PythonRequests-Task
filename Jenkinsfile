@@ -5,7 +5,7 @@ pipeline{
 
 		stage ('Deploy application'){
                         steps{
-                                sh "bash deploy.sh"
+                                sh "docker-compose up"
 
                         }
 
